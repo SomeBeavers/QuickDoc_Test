@@ -3,11 +3,13 @@
   <PropertyGroup>
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>3ec07455-37ed-4dee-b71f-ba79196b4c33</SharedGUID>
+    <SharedGUID>161745ff-fa23-4dbf-9cc3-ae6c400c329d</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Shared1</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Shared1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared2.cs" />
   </ItemGroup>
 </Project>
